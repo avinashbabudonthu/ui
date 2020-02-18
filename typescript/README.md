@@ -1,4 +1,4 @@
 # Typescript
 
 ## Examples
-* [Install Typescript](install.txt)
+* [Install Typescript](install.md)
