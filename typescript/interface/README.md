@@ -1,4 +1,4 @@
 # Interface Practice
 
-## Definiing Interface
+## Defining Interface
 * Refer [main.ts](main.ts)
