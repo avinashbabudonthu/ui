@@ -14,6 +14,7 @@
 
 ### Pluralsight
 * Angular: First Look
+* Angular: Getting Started
 
 ### youtube
 * Angular Basics (Complete Guide - Tutorial for Beginners)
