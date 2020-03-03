@@ -7,3 +7,7 @@
 * [String](string)
 * [Functions](functions)
 * [Interface](interface)
+
+## Materials
+### Pluralsight
+* TypeScript Fundamentals
