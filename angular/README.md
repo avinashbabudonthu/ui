@@ -13,8 +13,8 @@
 * Angular - The Complete Guide (2020 Edition)
 
 ### Pluralsight
-* Angular: First Look
 * Angular: Getting Started
+* Angular: First Look
 
 ### youtube
 * Angular Basics (Complete Guide - Tutorial for Beginners)
