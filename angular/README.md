@@ -18,3 +18,6 @@
 
 ### youtube
 * Angular Basics (Complete Guide - Tutorial for Beginners)
+
+### Angular Documentation
+* [https://angular.io/docs](https://angular.io/docs)
