@@ -33,13 +33,22 @@
 	* TypeScript type definition files (*.d.ts)
 * class based object orientation
 
-## Driectives
+## Directives
 * ngFor, ngIf
 * These are call **Structural Directives** because they change the structure of DOM
     * Structural directives have prefix - *
     ```
     *ngFor, *ngIf
     ```
+* `ngFor`
+	* for-of will get object. Below code prints `jack, jill, jane ..`
+```
+let employee of employees
+```
+	* for-in will get index. Below code prints - `0,1,2..`. **in** is iterating index
+```
+let employee in employees
+```
 
 ## Data Binding
 * Interpolation
@@ -63,3 +72,63 @@
 
 ## Services
 * We define class and write business logic
+
+## Decorator
+* Start with symbol `@`
+* Component decorator
+```
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'pm-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+```
+* NgModule decorator
+```
+import { NgModule } from '@angular/core';
+
+@NgModule({
+  declarations: [ AppComponent ],
+  imports: [ BrowserModule, AppRoutingModule ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
+
+## Steps to create new project in angular
+* Install node
+* Install npm
+* Install angular cli
+* Run below command to create new project named `product-management`
+```
+ng new product-management
+```
+* Open project in visual studio once created
+* Open `package.json` change `scripts/start` key value from `ng serve` to `ng serve -o`
+* Run application
+```
+npm start
+```
+* Browser open automatically with url `http://localhost:4200`
+
+## Intall bootstrap
+* Run below command from project root directory
+```
+npm install bootstrap
+```
+
+## Intall font-awesome
+* Run below command from project root directory
+```
+npm install font-awesome
+```
+
+## Enable bootstrap and font-awesome
+* Open `style.css`
+* Add below entries
+```
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+```
