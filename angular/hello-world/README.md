@@ -11,7 +11,9 @@ ng new hello-world
 ng serve --open
 ng serve -o
 ```
-* Run using `npm start`
+* Run using `npm start`. Navigate to `http://localhost:4200/`.
+* Open `package.json` in root directory change value of `scripts/start' from `ng serve` to `ng serve -o`
+	* Run `npm start`. Now this command automatically opens the browser
 
 ## Code scaffolding
 * Run `ng generate component component-name` to generate a new component. 
