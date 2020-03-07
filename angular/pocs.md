@@ -1,5 +1,6 @@
 ## Angular POCs To Do
-* ngIf
-* ngFor
 * tables creation
 * data binding
+* routing
+* custom components
+* Get data from rest api
