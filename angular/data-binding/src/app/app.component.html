@@ -1,0 +1,105 @@
+<div class="jumbotron text-center">
+  <h1>Angular Data Binding</h1>
+</div>
+
+<div class="container">
+    <h3>Interpolation</h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <h1> {{ h1Text}} </h1>
+    </div>
+  </div>
+  <hr />
+
+  <h3>Property Binding</h3>
+  <div class="row">
+    <div class="col-sm-4">
+        <img src="{{img1}}" title="{{imgTitle}}" style="width: 100px;"/>
+    </div>
+    <div class="col-sm-4">
+        <img [src]="img1" [title]="imgTitle"  style="width: 100px;"/>
+    </div>
+    <div class="col-sm-4">
+        <img [src]="img1" [title]="imgTitle" [style.width.px]="imageWidth" [style.margin.px]="imageMargin"/>
+    </div>
+  </div>
+  <hr />
+  
+  <h3>Event Binding</h3>
+  <div class="row">
+      <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="toggle()">Toggle Boolean Property</button>
+      </div>
+      <div class="col-sm-4">
+        <h3>{{toggleValue}}</h3>
+      </div>
+  </div>
+  <hr />
+
+  <h3>Event Binding</h3>
+  <div class="row">
+      <div class="col-sm-4">
+          <button class="btn btn-primary" (click)="toggleImage()">{{showImage ? 'Hide' : 'Show'}} Image</button>          
+      </div>
+      <div class="col-sm-4">
+          <img *ngIf="showImage" [src]="img1" [title]="imgTitle" [style.width.px]="imageWidth" [style.margin.px]="imageMargin"/>
+      </div>
+  </div>
+  <hr />
+  
+  <h3>Two way binding</h3>
+  <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+            <input type="text" class="form-control" [(ngModel)]='name'>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <h3> {{name}} </h3>
+      </div>
+  </div>
+  <hr />
+
+  <h3>Transforming Data With Pipes</h3>
+  <div class="row">
+      <div class="col-sm-4">
+          <input type="text" class="form-control" [(ngModel)]='name'>
+      </div>
+      <div class="col-sm-4">
+          <h3> {{name | lowercase}} </h3>
+      </div>
+      <div class="col-sm-4">
+          <h3>  {{name | uppercase}} </h3>
+      </div>
+  </div>
+  <hr />
+
+  <div class="row">
+      <div class="col-sm-4">{{total | currency}}</div>
+      <div class="col-sm-4">total | currency</div>
+  </div><hr />
+
+  <div class="row">
+      <div class="col-sm-4">{{total | currency | lowercase}}</div>
+      <div class="col-sm-4">total | currency | lowercase</div>
+  </div><hr />
+
+  <div class="row">
+      <div class="col-sm-4">{{total | currency | uppercase}}</div>
+      <div class="col-sm-4">total | currency | uppercase</div>
+  </div><hr />
+
+  <div class="row">
+      <div class="col-sm-4">{{total | currency: 'INR' | lowercase}}</div>
+      <div class="col-sm-4">total | currency: 'INR' | lowercase</div>
+  </div><hr />
+
+  <div class="row">
+      <div class="col-sm-4">{{total | currency: 'USD': 'symbol': '1.2-3' | lowercase}}</div>
+      <div class="col-sm-4"><h5>total | currency: 'USD': 'symbol': '1.2-3' | lowercase</h5></div>
+      <div class="col-sm-4">
+        <h5>atleast 1 digit to left of decimal, minimum 2 digits to right of decimal, maximum 3 digits right of decimal</h5>
+      </div>
+  </div><hr />
+
+</div>

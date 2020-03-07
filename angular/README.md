@@ -8,6 +8,7 @@
 * [bootstrap-font-awesome](bootstrap-font-awesome)
 * [ng-if](ng-if)
 * [ng-for](ng-for)
+* [data-binding](data-binding)
 
 ## Materials
 ### Udemy
