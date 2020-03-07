@@ -20,6 +20,6 @@ npm start
     * Property Binding
     * Event Binding
     * Two Way Binding
-        * For two way binding we need to use `ngModel` for that we need to add `FormsModule` in [src/app/app.module.ts]
+        * For two way binding we need to use `ngModel` for that we need to add `FormsModule` in [src/app/app.module.ts](src/app/app.module.ts)
         * We need to import `FormsModule` from `angular/forms`
     * Transforming Data With Pipes
