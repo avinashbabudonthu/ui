@@ -132,3 +132,50 @@ npm install font-awesome
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 ```
+
+## Component level styles
+* Declare `styles` property in `@Component` directive
+```
+@Component({
+	selector: 'emps',
+	template: './employee.component.html',
+	styles: ['thead {color: red;}']
+})
+```
+* Declare 'styleUrls` property in `@Component` directive. We can pass multiple css files
+```
+@Component({
+	selector: 'emps',
+	template: './employee.component.html',
+	styleUrls: ['./employees1.component.css', './employees2.component.css']
+})
+```
+
+## Component Lifecycle
+* Lifecycle steps
+	* Create
+	* Render
+	* Create and render children
+	* Process changes
+	* Destroy
+* Angular provide life cycle hooks to perform operations at any of the above steps
+* Lifecycle hooks
+	* OnInit: Perform component initialization after angular initializes data bound properties. This is good place to retrieve data from backend server through rest api
+	* OnChanges: Perform any action after changes to input properties
+	* OnDestroy: To perform any clean up before angular destroys component
+* Each life cycle interface declares one method with syntax `ng[InterfaceName]`	
+
+### OnInit lifecycle hook
+* Implment `OnInit` interface
+```
+import { Component, OnInit } from '@angular/core';
+
+export class EmployeeComponent implements OnInit{
+	id: number;
+	name: string;
+	
+	ngOnInit(): void {
+		console.log('In OnInit');
+	}
+}
+```
