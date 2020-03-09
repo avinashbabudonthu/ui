@@ -1,6 +1,5 @@
 ## Angular POCs To Do
 * routing
-* custom components
 * Get data from rest api
 * OnInit
 * constructor
@@ -11,3 +10,4 @@
 ```
 *ngIf="propLoanSearchResults; else stillLoading
 ```
+* using interface and class

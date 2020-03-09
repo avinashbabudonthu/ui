@@ -8,7 +8,5 @@ npm install -g typescript
 * Check typescript version
 ```
 tsc --version
-```
-```
 tsc -v
 ```

@@ -9,6 +9,7 @@
 * [ng-if](ng-if)
 * [ng-for](ng-for)
 * [data-binding](data-binding)
+* [components](components)
 
 ## Materials
 ### Udemy
