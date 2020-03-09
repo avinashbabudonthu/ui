@@ -14,7 +14,7 @@ npm start
 * Create files
     * employee.component.ts
     * employee.component.html
-* write class `EmployeeComponent` in `employee.component.ts`
+* write class `EmployeeComponent` in [src/app/employees/employee.component.ts](src/app/employees/employee.component.ts)
 * Declare `@Component` directive in [src/app/employees/employee.component.ts](src/app/employees/employee.component.ts)
 * Import `EmployeeComponent` in [src/app/app.module.ts](src/app/app.module.ts)
 * Give `emps` selector in [src/app/app.component.html](src/app/app.component.html)
